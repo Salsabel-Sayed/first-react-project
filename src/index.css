@@ -1,0 +1,430 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.pt-serif-regular-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+:root{
+  --bg-section:#b6eeb7;
+  --text-color:white;
+  --bg-color:#f4ccdc;
+  --btn-color:#65C18C;
+  --padding:3%;
+  --borderRadios:20px;
+  /* origin font */
+  --textFamily:"PT Serif", serif;
+  --textWeight:400;
+  --text-style:italic;
+  /* big font */
+  --textFamily2:"Lobster", sans-serif;
+  --textWeight2:400;
+  --text-style2:normal;
+  /* normal font */
+  --textFamily3: "Lora", serif;
+  --main-color:#08ac0a;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: capitalize;
+  font-family: var(--textFamily3) !important;
+}
+
+
+/* ! log in style */
+.login{
+  height: 80vh;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+}
+.login .container{
+  border-radius: var(--borderRadios);
+  border: 2px solid rgb(155, 194, 155);
+  padding: 10px;
+  box-shadow: 0 0 20px -10px;
+
+
+}
+.login .frgtPass{
+  color: rgb(155, 0, 0);
+  text-decoration:underline;
+  margin-left: 5px;
+}
+.login input, .signUp input,.paymentSection .inputPay input,
+.forgetSection .forgetpass input{
+  box-shadow:inset 0 0 16px -5px rgb(220, 230, 203) ;
+}
+
+/* ! sign up section */
+.signUp{
+  margin-top: 4%;
+ 
+}
+.signUp .formy{
+  border-radius: var(--borderRadios);
+  border: 2px solid rgb(155, 194, 155);
+  padding: 10px;
+  box-shadow: 0 0 20px -10px;
+
+}
+
+/* ! homesection */
+.homesection{
+  font-family: var(--textFamily3) !important;
+}
+
+/* ! produtsSection */
+.produtsSection{
+  position: relative;
+  border: 3px solid #b6eeb7;
+  padding:4%;
+  border-radius: var(--borderRadios);
+  overflow: hidden;
+}
+.produtsSection .heartIcon{
+  background-color: #f4ccdc;
+  position:absolute;
+  left: 100%;
+  top: 0;
+  font-size: 1.6rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: .4s;
+  color: white;
+}
+.red {
+  color: red;
+  background-color: #b6eeb7;
+  position:absolute;
+  left: 100%;
+  top: 0;
+  font-size: 1.6rem;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: .4s;
+  
+}
+.produtsSection:hover .heartIcon,.red{
+  left: 75%;
+}
+
+/* ! productDetailSection */
+.productDetailSection {
+  margin-top: 4%;
+}
+.productDetailSection .details{
+  background-color: var(--bg-section);
+  padding: var(--padding);
+  border-radius: var(--borderRadios);
+  box-shadow: 0 0 41px -10px  rgb(179, 179, 179) ,inset 0 0 70px -10px gray;
+}
+/* ! cart */
+.cart{
+  margin-top: 4%;
+  
+}
+.cart a.paymentBtn{
+  color: white !important;
+}
+.cart .cartLine{
+  border: 1px solid green;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 27px -7px gray;
+}
+.cart .priceTotal{
+  background-color: #08ac0a;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 0 20px 0px gray;
+  border-radius: 10px;
+
+}
+
+/* ! brand */
+
+.brand{
+  margin-top: 4%;
+
+}
+.brand .brands{
+  box-shadow: 0 0  31px -10px  gray;
+  /* border:1px solid  #08ac0a; */
+  border-radius: var(--borderRadios);
+  transition: .4s;
+}
+.brand .brands:hover{
+  transform:scale(1.05)
+  
+}
+.brand .brandLink img{
+  border-radius: 10px;
+}
+.brandSpecific{
+  margin-top: 4%;
+}
+.brandSpecific .oneBrand{
+  box-shadow: 0 0  31px -10px  gray;
+  border-radius: var(--borderRadios);
+  transition: .4s;
+  height: 400px;
+  padding: 5px;
+
+}
+
+.brandSpecific .oneBrand img{
+  width: 200px !important;
+}
+/* ! wishList */
+.wishListSection{
+  margin-top: 4%;
+}
+.wishListSection .wish{
+  border:1px solid #08ac0a;
+  padding: 10px;
+  border-radius: var(--borderRadios);
+  box-shadow: 0 0 20px -10px gray;
+}
+.wish img{
+  height: 400px;
+ 
+}
+
+/* ! profileSection */
+.profileSection{
+  /* height: 92vh; */
+  margin-top: 1%;
+}
+.profileSection .cardProfile{
+  box-shadow: 0 0  43px -3px gray;
+}
+.profileSection .nameProfile h1{
+  background-color: rgb(16, 174, 16);
+  padding: 10px;
+  border-radius: var(--borderRadios);
+  color: white;
+  box-shadow:0px 9px 30px 6px gray;
+}
+.profileSection .nameProfile h1 span{
+  color: #f4f66e;
+}
+
+/* ! notFoundSection */
+.notFoundSection .notFoundImg{
+  height: 90vh;
+}
+.notFoundSection .notFoundImg img{
+  width: 70%;
+}
+/* ! payment section */
+.paymentSection{
+  margin-top: 4%;
+}
+.paymentSection .payDetails{
+  border:1px solid #08ac0a;
+  padding: 10px;
+  border-radius: var(--borderRadios);
+  box-shadow: 0 0 20px -10px gray;
+
+}
+.paymentSection .allOver{
+  border:1px solid #95d296;
+  padding: 30px;
+  border-radius: var(--borderRadios);
+  box-shadow: 0 0 20px -10px gray;
+  
+}
+/* ! allOrederSection */
+.allOrederSection{
+  
+  margin-top: 4%;
+}
+.allOrederSection .orders{
+  border: 1px solid green;
+  padding: 10px;
+  border-radius: var(--borderRadios);
+  box-shadow: 0 0 20px -10px gray;
+
+}
+/* ! forgetSection */
+
+.forgetSection .forgetpass{
+  border: 1px solid green;
+  padding: 10px;
+  border-radius: var(--borderRadios);
+  box-shadow: 0 0 20px -10px gray;
+  margin-block:20px;
+
+}
+.navbar{
+  box-shadow: 0 0 34px -15px;
+}
+.sliderHome {
+  padding-left: 0px !important;
+} 
+/* You can add global styles to this file, and also import other style files */
+
+:root
+{ 
+    --light-color:#f0f3f2;
+    --shadow: rgba(145,158,171,.2) 0px 2px 4px -1px,rgba(145,158,171,.14) 0px 4px 5px 0px,rgba(145,158,171,.12) 0px 1px 10px 0px;
+    --rating-color:#ffc908;
+}
+
+body{
+    font-family: var(--font-family) !important;
+}
+/* section{
+  margin-block: 5%;
+} */
+.btnSubmit{
+  background-color: var(--main-color);
+  color: white;
+  transition: .3s;
+}
+.btnSubmit:hover{
+  background-color: #139b16;
+  color: white;
+
+}
+a.active{
+  background-color: var(--main-color);
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--light-color) !important;
+}
+
+.rating-color
+{
+    color: var(--rating-color);
+}
+.cursor-pointer
+{
+    cursor: pointer;
+}
+a , a:hover{
+    color: black !important;
+    text-decoration: none !important;
+   
+}
+.navbar a{
+  margin-left: 17px;
+
+}
+.a , .a:hover{
+    color: black !important;
+    text-decoration: none !important;
+}
+
+.product:hover
+{
+    box-shadow: var(--shadow);
+    border: solid 1px var(--main-color);
+}
+.btnStyle  .btn 
+{
+    transition: transform .5s , opacity .5s;
+    transform: translateY(100%);
+    opacity: 0;
+}
+.btnStyle .col-xl-2:hover .btn 
+{
+    opacity: 1;
+    transform: translateY(0%);
+
+}
+.font-sm
+{
+    font-size: 14px;
+}
+.text-main
+{
+    color: var(--main-color);
+}
+.bg-main
+{
+    background-color: var(--main-color) !important;
+}
+.bg-main-light 
+{
+    background-color: var(--light-color) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  <NavItem>
+              <Link className='nav-link' to="/home">home</Link>
+            </NavItem>
+            <NavItem>
+              <Link className='nav-link' to="/cart">cart</Link>
+            </NavItem>
+            <NavItem>
+              <Link className='nav-link' to="/products/">products</Link>
+            </NavItem>
+            <NavItem>
+              <Link className='nav-link' to="/categories">categories</Link>
+            </NavItem>
+            <NavItem>
+              <Link className='nav-link' to="/brand">brand</Link>
+            </NavItem>          
+          </Nav>
+          <Nav className="ms-auto" navbar >
+            <NavItem  >
+              <Link className='nav-link register' to="/register">register</Link>
+            </NavItem>
+            <NavItem  >
+              <Link className=" nav-link logOut" to="/logOut">log out</Link>
+            </NavItem>
+            </Nav>
+        </Collapse>
+      </Navbar> */
+
+
+
+
+
+
+
+
+
+
+
+
